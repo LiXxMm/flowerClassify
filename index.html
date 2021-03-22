@@ -185,7 +185,7 @@
             $('#show_img').show()
             $('#show_img').attr('src', classifyImgs[position].fileUrl)
 
-            if (resultList.length === 0) {
+            if (resultList&&resultList.length === 0) {
                 return
             }
             let res = resultList[position]
