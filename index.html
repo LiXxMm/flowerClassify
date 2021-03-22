@@ -237,6 +237,7 @@
                 formData.append('files', item.file, item.file.name)
             })
             // 发送请求
+            console.log('params',formData)
             try {
                 $.ajax({
                     url: api,
