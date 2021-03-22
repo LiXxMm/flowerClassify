@@ -251,12 +251,13 @@
                         $('#btn_upload').addClass('btn-right')
                         setResults(0)
                         getResult(resultList)
-                    },
-                    error:function (err) {
-                        alert('请求错误')
-                        $('.div-mask').hide()
-                        console.log(err)
                     }
+                    // ,
+                    // error:function (err) {
+                    //     alert('请求错误')
+                    //     $('.div-mask').hide()
+                    //     console.log(err)
+                    // }
                 });
 
             }catch(e)
