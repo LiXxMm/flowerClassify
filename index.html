@@ -124,11 +124,14 @@
             $('#input_file').on('change', function () {
                 if ($(this)[0].files.length===0){
                     return
-                }
-                if (resultList.length !== 0) {
+                }else {
                     $('.swiper-wrapper').html('')
                     initLayout()
                 }
+                // if (resultList.length !== 0) {
+                //     $('.swiper-wrapper').html('')
+                //     initLayout()
+                // }
                 console.log('files',$(this)[0].files)
                 for (let i = 0; i <$(this)[0].files.length ; i++) {
                     let item = {fileUrl: getImg($(this)[0].files[i]), file: $(this)[0].files[i], classify: ''}
