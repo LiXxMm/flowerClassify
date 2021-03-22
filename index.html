@@ -129,6 +129,7 @@
                     $('.swiper-wrapper').html('')
                     initLayout()
                 }
+                console.log('files',$(this)[0].files)
                 for (let i = 0; i <$(this)[0].files.length ; i++) {
                     let item = {fileUrl: getImg($(this)[0].files[i]), file: $(this)[0].files[i], classify: ''}
                     classifyImgs.push(item)
@@ -144,6 +145,7 @@
                     $(`#slide_img${position}`).on('click', function () {
                         setResults(position)
                     })
+                    console.log('classifyImgs',classifyImgs)
                 }
 
                 mySwiper.update()
@@ -232,17 +234,20 @@
             $('.div-mask').show()
             $('.p-subscript').remove()
             let formData = new FormData()
-            Object.values(classifyImgs).forEach((item) => {
-                // console.log(item.file)
+            classifyImgs.forEach(item=>{
                 formData.append('files', item.file, item.file.name)
             })
+            // Object.values(classifyImgs).forEach((item) => {
+            //     // console.log(item.file)
+            //     formData.append('files', item.file, item.file.name)
+            // })
             // 发送请求
-            console.log('params',formData)
+            console.log('formData.get(\'files\')',formData.get('files'))
             try {
                 $.ajax({
                     url: api,
                     type: 'POST',
-                    data: formData[0],
+                    data: formData,
                     cache: false,
                     contentType: false,        /* 不可缺 */
                     processData: false,         /* 不可缺 */
