@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/index.html" line="187" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/index.html" line="186" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5c92b1b-3850-476b-b124-30d21577c122" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/loading2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/loading3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/loading4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/loading5.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -29,18 +24,14 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="131">
-              <caret line="264" column="21" selection-start-line="264" selection-start-column="16" selection-end-line="264" selection-end-column="21" />
+              <caret line="251" column="47" lean-forward="true" selection-start-line="251" selection-start-column="47" selection-end-line="251" selection-end-column="47" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#8993#9638#0" />
               </folding>
             </state>
           </provider>
@@ -67,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="116" selection-start-line="116" selection-end-line="116" />
+            <state relative-caret-position="368">
+              <caret line="115" column="15" selection-start-line="115" selection-start-column="15" selection-end-line="115" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -90,22 +81,25 @@
       <find>swiper-pagination</find>
       <find>console</find>
       <find>classifyImgs</find>
-      <find>setResults</find>
       <find>setResult</find>
       <find>div-mask</find>
       <find>div-swiper</find>
       <find>initLayout</find>
       <find>console.log</find>
       <find>resultList.length</find>
-      <find>resultList</find>
       <find>mySwiper.update()</find>
       <find>display: flex;</find>
       <find>mages/bg</find>
       <find>uploadImg</find>
-      <find>btn_classify</find>
       <find>getResult</find>
       <find>classifyImag</find>
       <find>alert</find>
+      <find>btn_classify</find>
+      <find>resultList</find>
+      <find>btn_upload</find>
+      <find>slide_img</find>
+      <find>show_img</find>
+      <find>setResults</find>
     </findStrings>
     <replaceStrings>
       <replace>input_file</replace>
@@ -240,11 +234,25 @@
       <option name="project" value="LOCAL" />
       <updated>1616398484407</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update http">
+      <created>1616400992567</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1616400992568</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update layout">
+      <created>1616401783659</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1616401783659</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52970000" />
+    <option name="totallyTimeSpent" value="54586000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -277,7 +285,9 @@
     <MESSAGE value="update api" />
     <MESSAGE value="update api2" />
     <MESSAGE value="update img" />
-    <option name="LAST_COMMIT_MESSAGE" value="update img" />
+    <MESSAGE value="update http" />
+    <MESSAGE value="update layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="update layout" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/swiper-4.3.5.min.css">
@@ -314,26 +324,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="368">
+          <caret line="115" column="15" selection-start-line="115" selection-start-column="15" selection-end-line="115" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
-          <caret line="264" column="21" selection-start-line="264" selection-start-column="16" selection-end-line="264" selection-end-column="21" />
+          <caret line="251" column="47" lean-forward="true" selection-start-line="251" selection-start-column="47" selection-end-line="251" selection-end-column="47" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#button#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#8993#9638#0" />
           </folding>
         </state>
       </provider>
