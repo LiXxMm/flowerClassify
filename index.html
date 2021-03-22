@@ -73,12 +73,13 @@
                 slidesPerView:'auto',
                 // loopedSlides: 10,
                 spaceBetween: 20,
+                autoplay:false,
                 // loopAdditionalSlides:1,
-                autoplay: {
-                    delay: 2000,
-                    stopOnLastSlide: false,
-                    disableOnInteraction: false,
-                },
+                // autoplay: {
+                //     delay: 2000,
+                //     stopOnLastSlide: false,
+                //     disableOnInteraction: true,
+                // },
 
                 // 如果需要分页器
                 // pagination: {
@@ -107,13 +108,15 @@
                         // this.update()
                         // this.autoplay.start()
 
-                    },
-                    autoplayStop:function(){
-                        console.log('autoplayStop')
                     }
                 },
 
             });
+            // $('.swiper-container').hover(function () {
+            //     mySwiper.autoplay.stop()
+            // },function () {
+            //     mySwiper.autoplay.start()
+            // })
             initLayout()
 
             // 点击上传
@@ -143,21 +146,20 @@
                     // console.log('slideItem',slideItem)
                     // mySwiper.appendSlide(slideItem)
                     $('.swiper-wrapper').append(slideItem)
-                    mySwiper.activeIndex=position
-
                     $(`#slide_img${position}`).on('click', function () {
                         setResults(position)
                     })
-                    console.log('classifyImgs',classifyImgs)
+                    // console.log('classifyImgs',classifyImgs)
                 }
 
-                mySwiper.update()
-                $('.div-swiper').show()
-                mySwiper.autoplay.start()
                 if (classifyImgs.length===0){
                     alert("请上传分类图片")
                     return
                 }
+                mySwiper.activeIndex=0
+                mySwiper.update()
+                $('.div-swiper').show()
+
                 this.resultList =[]
 
                 classifyImag()
@@ -245,7 +247,7 @@
             //     formData.append('files', item.file, item.file.name)
             // })
             // 发送请求
-            console.log('formData.get(\'files\')',formData.get('files'))
+            // console.log('formData.get(\'files\')',formData.get('files'))
             console.log('formData',formData)
             try {
                 $.ajax({
