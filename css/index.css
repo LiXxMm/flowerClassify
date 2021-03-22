@@ -114,3 +114,9 @@ html, body {
     justify-content: center;
     z-index: 999;
 }
+.btn-right{
+    position: absolute;
+    top: -70px;
+    right: 0;
+
+}
