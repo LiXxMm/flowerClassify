@@ -20,6 +20,9 @@
 <body>
 <div class="main-div display-flex">
     <div style="height: 100%;">
+        <div style="" class="div-mask">
+            <img src="images/loading2.gif" style="opacity: .6">
+        </div>
         <div style="display: flex;justify-content: flex-end">
             <button class="upload-btn " id="btn_upload">上传图片</button>
             <button class="upload-btn " id="btn_classify" style="margin-left: 15px">开始分类</button>
@@ -50,7 +53,7 @@
 
                     </div>
                 </div>
-                <input type="file" style="display: none" id="input_file" @change="uploadImg"/>
+                <input type="file" style="display: none" id="input_file" multiple  @change="uploadImg"/>
             </div>
         </div>
     </div>
@@ -118,26 +121,34 @@
             })
             // 上传文件
             $('#input_file').on('change', function () {
+                if ($(this)[0].files.length===0){
+                    return
+                }
                 if (resultList.length !== 0) {
                     $('#show_img').attr('src', './images/bg2.png')
                     $('.swiper-wrapper').html('')
                     initLayout()
                 }
-                let item = {fileUrl: getImg($(this)[0].files[0]), file: $(this)[0].files[0], classify: ''}
-                classifyImgs.push(item)
-                let position = classifyImgs.length - 1
-                let slideItem = `<div class="swiper-slide"><img src="${item.fileUrl}" class="img-slide" id="slide_img${position}"></div>`
-                // console.log(slideItem)
-                // console.log('append')
-                // console.log('slideItem',slideItem)
-                // mySwiper.appendSlide(slideItem)
-                $('.swiper-wrapper').append(slideItem)
-                mySwiper.activeIndex=position
+                for (let i = 0; i <$(this)[0].files.length ; i++) {
+                    let item = {fileUrl: getImg($(this)[0].files[i]), file: $(this)[0].files[i], classify: ''}
+                    classifyImgs.push(item)
+                    let position = classifyImgs.length - 1
+                    let slideItem = `<div class="swiper-slide"><img src="${item.fileUrl}" class="img-slide" id="slide_img${position}"></div>`
+                    // console.log(slideItem)
+                    // console.log('append')
+                    // console.log('slideItem',slideItem)
+                    // mySwiper.appendSlide(slideItem)
+                    $('.swiper-wrapper').append(slideItem)
+                    mySwiper.activeIndex=position
+
+                    $(`#slide_img${position}`).on('click', function () {
+                        setResults(position)
+                    })
+                }
+
                 mySwiper.update()
                 // mySwiper.autoplay.start()
-                $(`#slide_img${position}`).on('click', function () {
-                    setResults(position)
-                })
+
                 // mySwiper.update()
                 // mySwiper.pagination.update()
                 $('.div-swiper').show()
@@ -145,6 +156,12 @@
             })
             // 分类
             $('#btn_classify').on('click', function () {
+                if (classifyImgs.length===0){
+                    alert("请上传分类图片")
+                    return
+                }
+                this.resultList =''
+
                 classifyImag()
             })
         })
@@ -189,6 +206,7 @@
         function initLayout() {
             classifyImgs = [];
             resultList = []
+            $('.div-mask').hide()
             $('.div-swiper').hide()
             $('.div-result').hide()
             // $('.div-swiper').css('width', $('#show_img').css('width'))
@@ -212,26 +230,42 @@
         }
 
         function classifyImag() {
-
+            $('.div-mask').show()
+            $('.p-subscript').remove()
             let formData = new FormData()
             Object.values(classifyImgs).forEach((item) => {
                 // console.log(item.file)
                 formData.append('files', item.file, item.file.name)
             })
             // 发送请求
-            $.ajax({
-                url: api,
-                type: 'POST',
-                data: formData,
-                cache: false,
-                contentType: false,        /* 不可缺 */
-                processData: false,         /* 不可缺 */
-                success: function (result) {
-                    resultList = result.results
-                    setResults(0)
-                    getResult(resultList)
-                }
-            });
+            try {
+                $.ajax({
+                    url: api,
+                    type: 'POST',
+                    data: formData,
+                    cache: false,
+                    contentType: false,        /* 不可缺 */
+                    processData: false,         /* 不可缺 */
+                    success: function (result) {
+                        $('.div-mask').hide()
+                        resultList = result.results
+                        setResults(0)
+                        getResult(resultList)
+                    },
+                    error:function (err) {
+                        alert('请求错误')
+                        $('.div-mask').hide()
+                        console.log(err)
+                    }
+                });
+
+            }catch(e)
+            {
+                alert('请求错误')
+                $('.div-mask').hide()
+
+
+            }
 
 
         }
