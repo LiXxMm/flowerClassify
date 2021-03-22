@@ -74,6 +74,7 @@
                 // loopedSlides: 10,
                 spaceBetween: 20,
                 autoplay:false,
+                activeIndex:0,
                 // loopAdditionalSlides:1,
                 // autoplay: {
                 //     delay: 2000,
@@ -93,23 +94,7 @@
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
                 },
-                on: {
-                    slideChangeTransitionEnd: function () {
-                        // console.log('slideChangeTransitionEnd')
-                        // console.log('realIndex',this.realIndex)
-                        // console.log('index',this.realIndex)
-                        // if (this.realIndex===classifyImgs.length-2) {
-                        //     console.log('into')
-                        //     // this.activeIndex=0
-                        // }
 
-
-                        // this.activeIndex=0
-                        // this.update()
-                        // this.autoplay.start()
-
-                    }
-                },
 
             });
             // $('.swiper-container').hover(function () {
@@ -141,10 +126,6 @@
                     classifyImgs.push(item)
                     let position = classifyImgs.length - 1
                     let slideItem = `<div class="swiper-slide"><img src="${item.fileUrl}" class="img-slide" id="slide_img${position}"></div>`
-                    // console.log(slideItem)
-                    // console.log('append')
-                    // console.log('slideItem',slideItem)
-                    // mySwiper.appendSlide(slideItem)
                     $('.swiper-wrapper').append(slideItem)
                     $(`#slide_img${position}`).on('click', function () {
                         setResults(position)
@@ -156,18 +137,13 @@
                     alert("请上传分类图片")
                     return
                 }
-                mySwiper.activeIndex=0
-                mySwiper.update()
                 $('.div-swiper').show()
-
+                mySwiper.slideTo(0,100)
+                // console.log('activeIndex',mySwiper.activeIndex)
                 this.resultList =[]
-
                 classifyImag()
             })
-            // 分类
-            $('#btn_classify').on('click', function () {
 
-            })
         })
 
         // 文件流转地址
