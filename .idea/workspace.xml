@@ -1,25 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/index.html" line="169" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/index.html" line="142" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5c92b1b-3850-476b-b124-30d21577c122" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/flower2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/flower3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/flower4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/flower5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/flower6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/flower7.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bg_shoes.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/loading3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/loading4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/loading5.gif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -36,12 +23,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+            <state relative-caret-position="1311">
+              <caret line="119" column="14" selection-start-line="119" selection-start-column="14" selection-end-line="119" selection-end-column="14" />
               <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#2575#3568#0" />
+                <element signature="e#3998#5478#0" />
+                <element signature="e#5541#5994#0" />
+                <element signature="e#6034#6935#0" />
+                <element signature="e#6967#7177#0" />
+                <element signature="e#7213#7824#0" />
+                <element signature="e#7858#9388#0" />
               </folding>
             </state>
           </provider>
@@ -68,8 +63,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+            <state relative-caret-position="539">
+              <caret line="130" column="12" selection-start-line="130" selection-start-column="12" selection-end-line="130" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -92,11 +87,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>inputFile</find>
-      <find>swiper-pagination</find>
-      <find>console</find>
-      <find>setResult</find>
-      <find>div-mask</find>
       <find>div-swiper</find>
       <find>initLayout</find>
       <find>console.log</find>
@@ -120,6 +110,13 @@
       <find>mySwiper.activeIndex</find>
       <find>auto</find>
       <find>btn-</find>
+      <find>30%</find>
+      <find>mask</find>
+      <find>1000</find>
+      <find>SETr</find>
+      <find>280</find>
+      <find>setRE</find>
+      <find>p-subscript</find>
     </findStrings>
     <replaceStrings>
       <replace>input_file</replace>
@@ -211,7 +208,7 @@
       <workItem from="1615225430400" duration="15887000" />
       <workItem from="1615799284867" duration="25741000" />
       <workItem from="1615913397689" duration="7303000" />
-      <workItem from="1616467590891" duration="4810000" />
+      <workItem from="1616467590891" duration="6963000" />
     </task>
     <task id="LOCAL-00001" summary="fit https">
       <created>1616384675562</created>
@@ -367,11 +364,25 @@
       <option name="project" value="LOCAL" />
       <updated>1616470386972</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="update style">
+      <created>1616505865320</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1616505865320</updated>
+    </task>
+    <task id="LOCAL-00024" summary="update style">
+      <created>1616508625358</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1616508625358</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65894000" />
+    <option name="totallyTimeSpent" value="68047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -381,7 +392,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4993395" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4993395" visible="true" weight="0.04249292" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -390,7 +401,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49867898" weight="0.3281471" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006605" side_tool="true" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006605" side_tool="true" visible="true" weight="0.04249292" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -429,7 +440,8 @@
     <MESSAGE value="update http2" />
     <MESSAGE value="update arrow" />
     <MESSAGE value="update img type" />
-    <option name="LAST_COMMIT_MESSAGE" value="update img type" />
+    <MESSAGE value="update style" />
+    <option name="LAST_COMMIT_MESSAGE" value="update style" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/swiper-4.3.5.min.css">
@@ -472,20 +484,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        <state relative-caret-position="1311">
+          <caret line="119" column="14" selection-start-line="119" selection-start-column="14" selection-end-line="119" selection-end-column="14" />
           <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#2575#3568#0" />
+            <element signature="e#3998#5478#0" />
+            <element signature="e#5541#5994#0" />
+            <element signature="e#6034#6935#0" />
+            <element signature="e#6967#7177#0" />
+            <element signature="e#7213#7824#0" />
+            <element signature="e#7858#9388#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+        <state relative-caret-position="539">
+          <caret line="130" column="12" selection-start-line="130" selection-start-column="12" selection-end-line="130" selection-end-column="12" />
         </state>
       </provider>
     </entry>
