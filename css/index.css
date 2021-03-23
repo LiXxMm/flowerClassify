@@ -121,3 +121,13 @@ html, body {
     right: 0;
 
 }
+.swiper-container{
+    padding: 0 20px;
+    width: 98%;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+    outline: none;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+    outline: none;
+}
