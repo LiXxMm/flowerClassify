@@ -25,10 +25,12 @@
         <div style="" class="div-mask display-flex">
             <img src="images/loading2.gif" style="opacity: .6">
         </div>
+
         <div class="div-container">
+
             <div style="height: 85%" class="display-flex">
                 <!--                显示图-->
-                <button class="upload-btn " id="btn_upload">上传图片</button>
+                <p style="color: rgba(255,255,255,.6)" class="p-classify">识别类别：百合花，酢浆草，马蹄莲，康乃馨，向日葵，小雏菊，郁金香，大葱花，荷花，蝴蝶兰</p>
                 <img src="./images/bg2.png" style="max-width: 100%;max-height: 85%" id="show_img">
                 <!--                结果-->
                 <div class="div-result">
@@ -54,6 +56,7 @@
                 </div>
                 <input type="file" style="display: none" id="input_file" multiple accept=".jpg,.png,.jpeg" @change="uploadImg"/>
             </div>
+            <button class="upload-btn " id="btn_upload">上传图片</button>
         </div>
 </div>
     <script>
@@ -96,6 +99,7 @@
                     initLayout()
                 }
                 console.log('files',$(this)[0].files)
+                $('.p-classify').hide()
                 for (let i = 0; i <$(this)[0].files.length ; i++) {
                     let item = {fileUrl: getImg($(this)[0].files[i]), file: $(this)[0].files[i], classify: ''}
                     classifyImgs.push(item)
@@ -164,6 +168,7 @@
             $('.div-mask').hide()
             $('.div-swiper').hide()
             $('.div-result').hide()
+            $('.p-classify').show()
             $('#show_img').hide()
         }
 
